@@ -1,0 +1,67 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #EEE8AA;
+}
+
+.header {
+	height: 120px;
+	width: 90%;
+	background-color: #FFA500;
+	margin-top: 15px;
+	margin-left: 80px;
+	border-radius: 25px;
+}
+
+.test {
+	margin:0px;
+	padding: 20px;
+	padding-left: 50px;
+	font-size: 50px;
+	font-family: Comic Sans MS, san-serif;
+	color: white;
+}
+
+.front{
+	border: 2px solid black;
+	width: 70%;
+	height: 800px;
+	margin-left: 200px;
+	margin-top: 100px;
+}
+
+.front h2 {
+	padding-left: 40%;
+}
+
+.front-b {
+	
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+	float: left;
+	margin-left: 30px;
+}
+
+.front-b p{
+	font-size: 30px;
+	color: white;   
+}
+
+/*.front-html:hover{
+	background-color: #FF8C00;
+	width: 500px;
+	height: 200px;
+	z-index: 1;
+	position: relative;
+}
+*/
+.wind{
+	background-color: silver;
+	width: 500px;
+	height: 200px;
+	border-radius: 10px;
+	margin-top: 50px;
+}
+
+
