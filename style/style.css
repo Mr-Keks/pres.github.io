@@ -5,7 +5,7 @@ body{
 }
 
 .header {
-	height: 120px;
+	height: 150px;
 	width: 90%;
 	background-color: #FFA500;
 	margin-top: 15px;
@@ -13,40 +13,120 @@ body{
 	border-radius: 25px;
 }
 
+.header p{
+	font-size: 50px;
+	color: white;
+	padding-right:  40px;
+	float: right;
+	font-family: Comic Sans MS, san-serif;
+}
+
+.header p:hover {
+	cursor: pointer;
+	color: silver;
+}
+
 .test {
 	margin:0px;
-	padding: 20px;
+	padding-top: 15px;
 	padding-left: 50px;
-	font-size: 50px;
-	font-family: Comic Sans MS, san-serif;
-	color: white;
+}
+
+.webb{
+	margin-left: 200px;
+	margin-top: 40px;
+	width: 70%;
 }
 
 .front{
-	border: 2px solid black;
-	width: 70%;
-	height: 800px;
+	width: 80%;
+	height: 650px;
 	margin-left: 200px;
 	margin-top: 100px;
+	background-color: #EEE8AA;
 }
 
 .front h2 {
-	padding-left: 40%;
+	padding-top: 10px;
+	padding-left: 45%;
+	font-size: 30px;
 }
 
 .front-b {
 	
-	height: 100px;
-	width: 100px;
-	border-radius: 50px;
+	height: 500px;
+	width: 400px;
 	float: left;
 	margin-left: 30px;
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+.front-b:hover{
+	overflow:auto;
+}
+
+.front-b h3{
+	font-size: 30px;
+	color: white;
+	padding-left: 20px;
 }
 
 .front-b p{
-	font-size: 30px;
+	padding-left: 5px;
+	font-size: 20px;
 	color: white;   
 }
+
+hr{
+	margin-bottom:50px;
+}
+
+.back{
+	
+	margin-left: 100px;
+}
+
+.foot {
+	margin-top: 360px;
+	width: 100%;
+	background-color: #FFA500;
+	height: 300px;
+}
+
+.footer-button {
+	text-decoration: none;
+	background-color: transparent;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 40px;
+	margin-left: 20px;
+	margin-top: 130px;
+
+}
+
+#toTop {
+width:50px;
+border:1px solid #ccc;
+background:	#FF8C00;
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:10px; /* отступ кнопки от нижнего края страницы*/
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+border-radius: 30px;
+height: 30px;
+}
+
+
+
+
+
 
 /*.front-html:hover{
 	background-color: #FF8C00;
@@ -56,12 +136,5 @@ body{
 	position: relative;
 }
 */
-.wind{
-	background-color: silver;
-	width: 500px;
-	height: 200px;
-	border-radius: 10px;
-	margin-top: 50px;
-}
 
 

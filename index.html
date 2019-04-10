@@ -4,28 +4,112 @@
 	<meta charset="utf-8">
 	<title>Amazing web site</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+	$(function() {
+
+ 	$(window).scroll(function() {
+
+ 	if($(this).scrollTop() != 0) {
+
+ 	$('#toTop').fadeIn();
+ 
+ 	} else {
+
+ 	$('#toTop').fadeOut();
+
+ 	}
+
+ 	});
+ 
+ 	$('#toTop').click(function() {
+
+ 	$('body,html').animate({scrollTop:0},800);
+
+ 	});
+ 
+	});
+
+	</script>
 </head>
 <body>
+	
 	<header>
+
+
 		<div class="header">
-			<p class="test">Logo</p>
+			<img src="image/logo.png" class="test">
+			<a href="#backend" style="text-decoration: none;"><p style="padding-right: 20%; ">Back end</p></a>
+			<a href="#frontend" style="text-decoration: none;"></a><p>Front end</p></a>
+			<a href="#webdev" style="text-decoration: none;"></a><p>Web development</p></a>
+			
+			
 		</div>
 	</header>
 	<main>
-		<div class="front">
-			<h2>Front end</h3>
-			<div class="front-b front-html" style="margin-left: 37%; background-color: #FF8C00;">
-				<p style="padding-left: 10px;">HTML</p>
-				<div class="wind">html information</div>
+		
+		<div class="webb" id="webdev">
+			<h2>Web development</h2>
+			<img >
+			<p style=" font-size: 20px;">Веб-розробка — процес створення веб-сайтів або веб-додатків. Основними етапами процесу є веб-дизайн, верстка сторінок, програмування для веб на стороні клієнта і сервера, а також конфігурування веб-сервера. Веб-розробка сладається з: Front end'y та Back end'y</p>
+		</div>
+		<div class="front" >
+			
+			<h2 id="frontend">Front end</h3>
+				<hr>
+				<p style="margin-left: 23%; font-size: 20px;">Front end — це  інтерфейс для взаємодії між користувачем і back end. Front end сладається з:</p>
+			<div class="front-b front-html" style="margin-left: 8%; background-color: #FF8C00;">
+				<h3 >HTML</h3>
+				<p>HTML (англ. HyperText Markup Language, укр. Мова розмітки гіпертекстових документів) — стандартна мова розмітки веб-сторінок в Інтернеті. Більшість веб-сторінок створюються за допомогою мови HTML (або XHTML). Документ HTML оброблюється браузером та відтворюється на екрані у звичному для людини вигляді.
+
+				HTML є похідною мовою від SGML, успадкувавши від неї визначення типу документа та ідеологію структурної розмітки тексту.
+
+				Попри те, що HTML — штучна комп'ютерна мова, вона не є мовою програмування.
+
+				HTML разом із каскадними таблицями стилів та вбудованими скриптами — це три основні технології побудови веб-сторінок.
+				</p>
 			</div>
 			<div class="front-b" style="background-color: #1E90FF;">
-				<p style="padding-left: 20px;">CSS</p>
+				<h3 >CSS</h3>
+				<p>CSS (англ. Cascading Style Sheets, укр. Каскадні таблиці стилів) — спеціальна мова, що використовується для опису зовнішнього вигляду сторінок, написаних мовами розмітки даних.
+
+				Найчастіше CSS використовують для візуальної презентації сторінок, написаних HTML та XHTML, але формат CSS може застосовуватися до інших видів XML-документів.
+
+				Специфікації CSS були створені та розвиваються Консорціумом Всесвітньої мережі.
+
+				CSS має різні рівні та профілі. Наступний рівень CSS створюється на основі попередніх, додаючи нову функціональність або розширюючи вже наявні функції. Рівні позначаються як CSS1, CSS2 та CSS3. Профілі — сукупність правил CSS одного або більше рівнів, створені для окремих типів пристроїв або інтерфейсів. Наприклад, існують профілі CSS для принтерів, мобільних пристроїв тощо.
+
+				CSS (каскадна або блочна верстка) прийшла на заміну табличній верстці веб-сторінок. Головна перевага блочної верстки — розділення змісту сторінки (даних) та їхньої візуальної презентації.</p>
 			</div>
 			<div class="front-b" style="background-color: #FFA500;">
-				<p style="padding-left: 35px;">JS</p>
+				<h3 >JS</h3>
+				<p>
+					JavaScript (JS) — динамічна, об'єктно-орієнтована прототипна мова програмування. Реалізація стандарту ECMAScript. Найчастіше використовується для створення сценаріїв веб-сторінок, що надає можливість на стороні клієнта (пристрої кінцевого користувача) взаємодіяти з користувачем, керувати браузером, асинхронно обмінюватися даними з сервером, змінювати структуру та зовнішній вигляд веб-сторінки.
+
+					JavaScript класифікують як прототипну (підмножина об'єктно-орієнтованої), скриптову мову програмування з динамічною типізацією. Окрім прототипної, JavaScript також частково підтримує інші парадигми програмування (імперативну та частково функціональну) і деякі відповідні архітектурні властивості, зокрема: динамічна та слабка типізація, автоматичне керування пам'яттю, прототипне наслідування, функції як об'єкти першого класу.
+				</p>
+			</div>
+			
+		</div>
+
+		<div id="backend" class="front" style="margin-top: 10px;">
+			
+			<hr style="margin-top: 30px;">
+			<div class="back">
+				<p style="margin-left: 30px; font-size: 20px;">Backend — це «задня» частина сайту, яка невидима відвідувачеві, але яка безпосередньо відповідає за роботу сайту. Бекенд і фронтенд сайту пишуться на різних мовах програмування: для бекенду характерні мови PHP, Python, Ruby, Go, а для фронтенду — JavaScript, HTML, CSS. Тому у розробників сайтів є поділ спеціалізацій — програмісти бекенду і фронтенду.</p>
+				<img src="image/backend.png">
 			</div>
 		</div>
 	</main>
-	<footer></footer>
+	<footer class="foot">
+		<img src="image/facebook-button.png" class="footer-button" style="margin-left: 2%;">
+		<img src="image/telegram-button.png" class="footer-button">
+		<img src="image/youtube-button.png" class="footer-button">
+		<p style="float: right; font-size: 20px; color: white; margin-top: 150px; margin-right: 10px;">ЛВПУ ІКТ</p>
+	</footer>
+	<div id = "toTop" ><p style="font-size: 15px; margin:0px; padding-top: 5px; color: white;"  >Вгору</p></div>
 </body>
+
 </html>
